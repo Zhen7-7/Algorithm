@@ -1,0 +1,8 @@
+package cn.zhen77.sort;
+
+public class TestTool {
+	public static void main(String[] args) {
+		 int i = (int)(Math.random()+1)*100;
+		 System.out.println(i);
+	}
+}
