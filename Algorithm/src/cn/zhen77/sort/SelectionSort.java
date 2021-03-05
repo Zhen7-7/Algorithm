@@ -12,7 +12,7 @@ public class SelectionSort {
 //					minPos = j;
 //				}
 				minPos = arr[minPos]>arr[j]? j:minPos;
-				System.out.println("minPos =" + minPos);
+//				System.out.println("minPos =" + minPos);
 			}
 			
 			//½»»»
