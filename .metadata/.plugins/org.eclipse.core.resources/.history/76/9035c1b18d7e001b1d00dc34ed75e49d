@@ -1,0 +1,26 @@
+package cn.zhen77.sort;
+
+public class InsertionSort {
+	 public static void main(String[] args) {
+		 int[] arr ={9,8,7,6,5,4,3};
+		 sort(arr);
+		 TestTool.print(arr);
+	}
+	static void sort(int[] arr) {
+		charu(arr,5);
+	}
+	static void charu(int[] arr,int i) {
+		while(arr[i]<arr[i-1]) {
+			if(i>1) {
+				swap(arr,i-1,i);
+				i=i-1;
+			}
+		}
+	}
+	
+	static void swap(int[] arr,int a,int b) {
+		int temp = arr[a];
+		arr[a] = arr[b];
+		arr[b] = temp;
+	}
+}

@@ -1,0 +1,19 @@
+package cn.zhen77.sort;
+
+public class InsertionSort {
+	 public static void main(String[] args) {
+		 int[] arr ={6,3,1,2,1,5,7};
+		 sort(arr);
+		 TestTool.print(arr);
+	}
+	static void sort(int[] arr) {
+		if(arr[0]>arr[1]) swap(arr, 0, 1); 
+		if(arr[1]>arr[2]) swap(arr, 1, 2);
+	}
+	
+	static void swap(int[] arr,int a,int b) {
+		int temp = arr[a];
+		arr[a] = arr[b];
+		arr[b] = temp;
+	}
+}
