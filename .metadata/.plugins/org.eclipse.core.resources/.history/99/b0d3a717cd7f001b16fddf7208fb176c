@@ -6,11 +6,13 @@ public class ShellSort {
 	 * 
 	 * */
 	public static void main(String[] args) {
-		DataChecker.check();
-		//		int[] arr = {15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0};
-//		insertionSort(arr);		
-//		shellSort(arr);
-//		TestTool.print(arr);
+//		DataChecker.check();
+		
+		int[] arr = {15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0};
+//		insertionSort(arr);
+		
+		shellSort(arr);
+		TestTool.print(arr);
 	}
 	static void shellSort(int[] arr) {
 		for(int j=6;j>0;j--) {
@@ -18,7 +20,7 @@ public class ShellSort {
 		}
 	}
 	static void middle(int[] arr,int a) {
-		//间隔为4 int m  m+=3;  
+		//间隔为4 int m  m+=4;  
 		for(int n=a;n<arr.length;n+=a) {
 			for(int i=n;i>0;i-=a) {
 				if(arr[i]<arr[i-a]) {

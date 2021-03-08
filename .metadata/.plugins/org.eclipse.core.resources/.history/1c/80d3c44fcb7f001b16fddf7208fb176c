@@ -6,39 +6,40 @@ public class ShellSort {
 	 * 
 	 * */
 	public static void main(String[] args) {
-		DataChecker.check();
-		//		int[] arr = {15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0};
-//		insertionSort(arr);		
-//		shellSort(arr);
-//		TestTool.print(arr);
+//		DataChecker.check();
+		
+		int[] arr = {15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0};
+		
+		
+		shellSort(arr);
+		TestTool.print(arr);
 	}
 	static void shellSort(int[] arr) {
-		for(int j=6;j>0;j--) {
-			middle(arr, j);
+		for(int j=6;j>=1;j/=2) {
+			middle(arr,j);
 		}
+		
 	}
-	static void middle(int[] arr,int a) {
-		//间隔为4 int m  m+=3;  
-		for(int n=a;n<arr.length;n+=a) {
-			for(int i=n;i>0;i-=a) {
-				if(arr[i]<arr[i-a]) {
-					swap(arr, i, i-a);
-				}
+	static void middle(int[] arr ,int j) {
+		//间隔为4 int m  m+=4;  
+		for (int m=j;m<arr.length;m+=j) {
+			if(arr[m]<arr[m-j]) {
+				swap(arr,m,m-j);
 			}
 		}
 		
 	}
 	
 	static void insertionSort(int[] arr) {
-		for(int n=1;n<arr.length;n++) {
+		for(int n=0;n<arr.length;n++) {
 			for(int i=n;i>0;i--) {
-				if(arr[i]<arr[i-1]) {
+				if(arr[i]>arr[i-1]) {
 					swap(arr,i,i-1);
+					
 				}
 			}
 		}
 	}
-	
 	static void swap(int[] arr,int a,int b) {
 		int temp = arr[a];
 		arr[a] = arr[b];
