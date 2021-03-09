@@ -1,40 +1,32 @@
 package cn.zhen77.sort;
 
 public class ShellSort {
-	/*算法思想:shell算法是insertion的升级版;
-	 * 首先将数组按照间隔为4去按照插入排序去排列
-	 * 
-	 * */
 	public static void main(String[] args) {
 		DataChecker.check();
-		//		int[] arr = {15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0};
-//		insertionSort(arr);		
-//		shellSort(arr);
-//		TestTool.print(arr);
 	}
 	static void shellSort(int[] arr) {
-		for(int j=6;j>0;j--) {
-			middle(arr, j);
+		int h =1;
+		while(h<arr.length/3) {
+			h=h*3 + 1;
 		}
-	}
-	static void middle(int[] arr,int a) {
-		//间隔为4 int m  m+=3;  
-		for(int n=a;n<arr.length;n+=a) {
-			for(int i=n;i>0;i-=a) {
-				if(arr[i]<arr[i-a]) {
-					swap(arr, i, i-a);
-				}
-			}
+		for(int gap=h;gap>0;gap=(gap-1)/3) {
+			insertionSort(arr, gap);
 		}
-		
 	}
 	
-	static void insertionSort(int[] arr) {
-		for(int n=1;n<arr.length;n++) {
-			for(int i=n;i>0;i--) {
-				if(arr[i]<arr[i-1]) {
-					swap(arr,i,i-1);
-				}
+	
+	
+	//用gap定义间隔
+	static void shellSortDemo(int[] arr) {
+		for(int gap=arr.length/2;gap>0;gap/=2) {
+			insertionSort(arr, gap);
+		}
+	}
+	static void insertionSort(int[] arr,int gap) {
+		
+		for(int i=gap;i<arr.length;i++) {
+			for(int j=i;j>gap-1 ;j-=gap) {  //j-gap>=0  所以 j>=gap ->j>gap-1
+				if(arr[j]<arr[j-gap]) swap(arr, j, j-gap);
 			}
 		}
 	}
@@ -44,5 +36,4 @@ public class ShellSort {
 		arr[a] = arr[b];
 		arr[b] = temp;
 	}
-	
 }

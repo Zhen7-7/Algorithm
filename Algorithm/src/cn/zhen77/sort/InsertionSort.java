@@ -9,8 +9,9 @@ public class InsertionSort {
 		charu(arr,i);
 	}
 	static void charu(int[] arr,int i) {
-		for(int j=i;j>0;j--) {
-			if(arr[j]<arr[j-1]) swap(arr, j, j-1);
+		for(int j=i;j>0 && arr[j]<arr[j-1];j--) {
+//			if(arr[j]<arr[j-1]) 
+			swap(arr, j, j-1);
 		}
 		
 	}
