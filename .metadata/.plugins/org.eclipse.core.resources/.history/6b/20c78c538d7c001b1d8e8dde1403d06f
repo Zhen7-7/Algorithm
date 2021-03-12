@@ -1,9 +1,0 @@
-package cn.zhen77.sort;
-
-public class SelectionSort {
-	public static void main(String[] args) {
-		int[] arr ={3,6,8,2,1,5,7};
-		
-		System.out.println(arr);
-	}
-}

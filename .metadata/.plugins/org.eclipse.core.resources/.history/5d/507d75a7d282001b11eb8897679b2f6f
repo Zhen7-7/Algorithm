@@ -1,0 +1,38 @@
+package cn.zhen77.sort;
+
+public class MergeSort {
+	public static void main(String[] args) {
+		int[] arr ={1,4,6,7,10,2,3,5,8};
+		merge(arr,0,4,8);
+		print(arr);
+	}
+	
+	
+	
+	//已知一个数组前后两段各自已经被排好顺序，如何进行合并
+	static void merge(int[] arr,int leftBound,int middle,int rightBound) {
+		int[] temp = new int[arr.length];//设置一个长度和arr相同的数组
+		//设置三个指针
+		int leftPot = leftBound;//左侧指针
+		int rightPot = middle+1;//右侧指针
+		int pointer = 0;//指向temp数组的指针
+		//将左右指针指向的值小的传入temp
+		//注意不要忘了+1
+		while(leftPot<=middle && rightPot<=rightBound) {
+			temp[pointer++] = arr[leftPot]<=arr[rightPot]?arr[leftPot++]:arr[rightPot++];
+		}
+		//当一侧的个数远大于另一侧个数时,就将剩下的值全部赋到temp中
+		if(leftPot<middle) temp[pointer++]=arr[leftPot++];
+		if(rightPot<rightBound) temp[pointer++]=arr[rightPot++];
+		//将temp数组重新赋值给arr
+		for(int i=0;i<temp.length;i++) {
+			arr[i]=temp[i];
+		}
+	}
+	static void print(int[] arr) {
+		for(int i=0;i<arr.length;i++) {
+			System.out.print(arr[i]+"  ");
+		}
+	}
+	
+}

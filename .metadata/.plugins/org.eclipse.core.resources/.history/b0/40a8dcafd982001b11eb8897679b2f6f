@@ -12,7 +12,7 @@ public class DataChecker {
 		}
 		return arr;
 	}
-	public static void check() {
+	static void check() {
 		boolean same = true;
 		for(int times = 0; times < 1000; times++) {
 			int[] arr = generaterRandomArray();
@@ -24,9 +24,7 @@ public class DataChecker {
 //			BubbleSort_plus.sort(arr2);
 //			InsertionSort.sort(arr2);
 //			ShellSort.insertionSort(arr2);
-//			ShellSort.shellSort(arr2);
-
-			MergeSort.sort(arr2, 0, arr2.length-1);
+			ShellSort.shellSort(arr2);
 			
 			
 			for (int i = 0; i < arr2.length; i++) {

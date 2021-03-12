@@ -12,7 +12,7 @@ public class DataChecker {
 		}
 		return arr;
 	}
-	public static void check() {
+	static void check() {
 		boolean same = true;
 		for(int times = 0; times < 1000; times++) {
 			int[] arr = generaterRandomArray();
