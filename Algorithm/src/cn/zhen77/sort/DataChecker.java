@@ -26,7 +26,8 @@ public class DataChecker {
 //			ShellSort.insertionSort(arr2);
 //			ShellSort.shellSort(arr2);
 
-			MergeSort.sort(arr2, 0, arr2.length-1);
+//			MergeSort.sort(arr2, 0, arr2.length-1);
+			selectionSort_plus.sort(arr2);
 			
 			
 			for (int i = 0; i < arr2.length; i++) {

@@ -1,0 +1,48 @@
+package demo;
+
+public class QuickSort {
+	/*
+	  算法思想: 两个指针,一个从左开始,一个从右开始;确定一个中间参照数,当左边遇到大于RS(reference substance)左指针停止
+	  		    当右侧找到一个数小于rs时 ,指针停止,随即进行交换;
+	  		    这样 一个过程下来就会让做左边的数<rs  右边的数>rs
+	  		    问题:当一侧指针指向了rs时,而另一侧还是有数不符合要求怎么办,直接让rs和不符合要求的数交换,另一侧指针继续走
+	  		    直到两指针相遇为止
+	 version1.0.1
+	 */
+	//截下下来对以上方法尝试实现
+	public static void main(String[] args) {
+		int[] arr = {8,3,2,9,6,2,3,5,4,1,6};
+		sort1(arr,4);
+		print(arr);
+	}
+	static void sort1(int[] arr,int rs) {
+		//定义连个指针
+		int i = 0;
+		int j = arr.length-1;
+		while(i!=j) {
+			while(arr[i]<arr[rs]) {
+				i++;					//0-8   4-6
+			}
+			while(arr[j]>arr[rs]) {
+				j--;
+			}
+			if(j==rs && arr[i]>arr[rs]) {
+				swap(arr,i,rs);
+				i=rs;
+			}else if(i==rs && arr[j]<arr[rs]) {
+				swap(arr,j,rs);
+				j=rs;
+			}else swap(arr,i,j);
+		}
+	}
+	static void swap(int[] arr,int i,int j) {
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+	}
+	static void print(int[] arr) {
+		for(int i : arr) {
+			System.out.print(i+"  ");
+		}
+	}
+}
