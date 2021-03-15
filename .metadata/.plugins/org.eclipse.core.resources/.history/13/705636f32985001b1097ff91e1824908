@@ -1,0 +1,9 @@
+package teach_sort;
+
+public class InsertionSrot {
+
+	public InsertionSrot() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

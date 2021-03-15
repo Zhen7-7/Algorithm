@@ -10,8 +10,10 @@
 <fullyQualifiedTypeName name="cn.zhen77.sort.InsertionSort"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.ShellSort"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.selectionSort_plus"/>
-<fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.TestTool"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.QuickSort"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.DataChecker"/>
+<fullyQualifiedTypeName name="demo.DataChecker"/>
+<fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
+<fullyQualifiedTypeName name="teach_sort.DataChecker"/>
 </qualifiedTypeNameHistroy>

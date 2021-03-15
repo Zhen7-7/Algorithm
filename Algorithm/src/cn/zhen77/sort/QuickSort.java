@@ -1,6 +1,8 @@
 package cn.zhen77.sort;
 //ฤฺทศ๋ฤ
 
+import cn.zhen77.sort.DataChecker;
+
 public class QuickSort{
 	public static void main(String[] args) {
 //		int[] arr = {8,4,6,2,6,7,4,2,3,1,3,1,10,6,5,6};

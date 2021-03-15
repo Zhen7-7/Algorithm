@@ -3,6 +3,8 @@ package cn.zhen77.sort;
 import java.util.Arrays;
 import java.util.Random;
 
+import teach_sort.QuickSort;
+
 public class DataChecker {
 	static int[] generaterRandomArray() {
 		Random r = new Random();
@@ -28,7 +30,7 @@ public class DataChecker {
 
 //			MergeSort.sort(arr2, 0, arr2.length-1);
 //			selectionSort_plus.sort(arr2);
-			QuickSort.sort(arr2,0,arr2.length-1);
+//			QuickSort.sort(arr2,0,arr2.length-1);/
 			
 			
 			for (int i = 0; i < arr2.length; i++) {
