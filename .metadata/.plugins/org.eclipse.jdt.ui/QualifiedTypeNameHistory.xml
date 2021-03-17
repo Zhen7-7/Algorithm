@@ -2,18 +2,21 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.sql.Array"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.SelectionSort"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.BubboSort"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.BubbleSort_plus"/>
 <fullyQualifiedTypeName name="java.lang.IncompatibleClassChangeError"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.InsertionSort"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.ShellSort"/>
-<fullyQualifiedTypeName name="cn.zhen77.sort.selectionSort_plus"/>
-<fullyQualifiedTypeName name="cn.zhen77.sort.TestTool"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.QuickSort"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.DataChecker"/>
 <fullyQualifiedTypeName name="demo.DataChecker"/>
 <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
 <fullyQualifiedTypeName name="teach_sort.DataChecker"/>
+<fullyQualifiedTypeName name="javax.tools.Tool"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="cn.zhen77.sort.TestTool"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="cn.zhen77.sort.Counting"/>
+<fullyQualifiedTypeName name="cn.zhen77.sort.selectionSort_plus"/>
 </qualifiedTypeNameHistroy>
