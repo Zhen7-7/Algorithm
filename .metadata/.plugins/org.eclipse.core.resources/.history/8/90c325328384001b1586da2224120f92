@@ -1,9 +1,0 @@
-package demo;
-
-public class BubboSort {
-
-	public BubboSort() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
