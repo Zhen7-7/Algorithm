@@ -6,7 +6,7 @@ public class ShellSort {
 	}
 	static void shellSort(int[] arr) {
 		int h =1;
-		while(h<arr.length/3) {
+		while(h<=arr.length/3) {
 			h=h*3 + 1;
 		}
 		for(int gap=h;gap>0;gap=(gap-1)/3) {

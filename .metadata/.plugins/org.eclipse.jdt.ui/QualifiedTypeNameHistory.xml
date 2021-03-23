@@ -11,7 +11,6 @@
 <fullyQualifiedTypeName name="cn.zhen77.sort.DataChecker"/>
 <fullyQualifiedTypeName name="demo.DataChecker"/>
 <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
-<fullyQualifiedTypeName name="teach_sort.DataChecker"/>
 <fullyQualifiedTypeName name="javax.tools.Tool"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -19,4 +18,5 @@
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.Counting"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.selectionSort_plus"/>
+<fullyQualifiedTypeName name="teach_sort.DataChecker"/>
 </qualifiedTypeNameHistroy>

@@ -20,12 +20,12 @@ public class DataChecker {
 			System.arraycopy(arr, 0, arr2, 0, arr.length);
 			
 			Arrays.sort(arr);
-			BubbleSort.sort(arr2);
+//			BubbleSort.sort(arr2);
 //			BubbleSort_plus.sort(arr2);
-			InsertionSort.sort(arr2);
-//			ShellSort.insertionSort(arr2);
-//			ShellSort.shellSort(arr2);
-
+//			InsertionSort.sort(arr2);
+//			ShellSort.insertionSort(arr2,1);
+			ShellSort.shellSort(arr2);
+			
 //			MergeSort.sort(arr2, 0, arr2.length-1);
 //			selectionSort_plus.sort(arr2);
 //			QuickSort.sort(arr2,0,arr2.length-1);
