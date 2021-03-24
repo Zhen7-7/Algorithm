@@ -1,9 +1,0 @@
-package cn.zhen77.sort;
-
-public class CountingChecker {
-
-	public CountingChecker() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

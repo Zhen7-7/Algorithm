@@ -12,11 +12,18 @@
 <fullyQualifiedTypeName name="demo.DataChecker"/>
 <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
 <fullyQualifiedTypeName name="javax.tools.Tool"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.TestTool"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.Counting"/>
 <fullyQualifiedTypeName name="cn.zhen77.sort.selectionSort_plus"/>
 <fullyQualifiedTypeName name="teach_sort.DataChecker"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+<fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+<fullyQualifiedTypeName name="java.time.format.FormatStyle"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
 </qualifiedTypeNameHistroy>
